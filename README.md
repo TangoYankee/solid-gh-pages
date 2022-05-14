@@ -1,3 +1,9 @@
+## Resources
+- [Vite config](https://vitejs.dev/config/#base)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
+- [react-gh-pages example](https://github.com/gitname/react-gh-pages)
+- [solid-js template](https://www.solidjs.com/guides/getting-started#try-solid)
+
 ## Usage
 
 Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
