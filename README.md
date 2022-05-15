@@ -70,12 +70,12 @@ To configure the module:
    - under `scripts`, add `"deploy": "gh-pages -d dist",`
 
 ### Configure Vite
-When building the application, Vite will assume that it is hosting on a root path. However, the GitHub pages route will include the name of repository.
+When building the application, Vite will assume that it is hosted on a root path. However, the GitHub pages route will include the name of repository.
 We will need to tell Vite about this path. This is done with the `base` option of the [Vite config](https://vitejs.dev/config/#base).
 
 - add `base: '/[your-repo-name]/',` to the [vite.config.ts](/vite.config.ts)
 
-Note: If you need to specify resource paths throughout your application relative to this place,
+Note: If you need to specify resource paths throughout your application relative to this path,
 it is available through [`import.meta.env.BASE_URL`](https://vitejs.dev/guide/env-and-mode.html).
 
 ### Deploy
@@ -87,11 +87,11 @@ We are finally ready to run our first deployment.
   - `pnpm run deploy`
 
 ### Visit your site
-GitHub Pages follows a formot of `[account-name].github.io/[repository-name]`.
-You can see your site there. 
+GitHub Pages follows a format of `[account-name].github.io/[repository-name]`.
+You can visit your site there. 
 
 ### Save your code to GitHub
-The `gh-pages` module's deploy script will create a `gh-pages` branch in your repository that ccontains only the production build. You can create other branches to track your source code.
+The `gh-pages` module's deploy script will create a `gh-pages` branch in your repository that contains only the production build. You can create other branches to track your source code.
 
 ```
 git add .
