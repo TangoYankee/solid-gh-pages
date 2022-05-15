@@ -4,7 +4,6 @@
   "homepage": "https://tangoyankee.github.io/solid-gh-pages",
   "description": "demonstration of hosting solid js on github pages",
   "scripts": {
-    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist",
     "start": "vite",
     "dev": "vite",
